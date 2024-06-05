@@ -16,6 +16,8 @@ welcome.innerText = localStorage.getItem("name");
 // Umm Al-Qura University, Makkah
 async function pray() {
   document.querySelector(".pray").style.display = "block";
+  document.querySelector("#wethar").style.display = "none";
+
   let data = await fetch(url);
   let res = await data.json();
   let time = res.data;
@@ -52,7 +54,7 @@ async function pray() {
 
 async function weather() {
   document.querySelector("#wethar").style.display = "block";
-
+  document.querySelector(".pray").style.display = "none";
   let urlWeather =
     "https://api.openweathermap.org/data/2.5/weather?q=Riyadh&appid=8a5abe0621157c03ac8be183032feb11";
 

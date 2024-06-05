@@ -22,15 +22,7 @@ nav img{
 /* height: 50vh; */
 
 }
-.pray{
-    color: aliceblue;
-        background-color: rgb(43, 67, 67);
-        background: url(masjed.jpg) no-repeat;
-        background-size: cover;
-        background-position-y:-23px ;
-    width: 100vw;
-    /* height: 20vh; */
-}
+
 #praySection{
 margin: 0;
 } 
@@ -69,9 +61,10 @@ width: 100vw;
 }
 #wethar{
     display: block;
-    /* border: none; */
+    /* background-color: rgb(58, 76, 77); */
+
     text-align: center;
-    /* width: 100vw;  */
+    width: 100vw; 
 }
 nav{
     color: #112b42;
@@ -118,5 +111,14 @@ button {
 
 .pray,#wethar{
     display: none;
+
+}
+.pray{
+    color: aliceblue;
+        /* background-color: rgb(43, 67, 67); */
+        background: url(masjed.jpg) no-repeat;
+        background-size: cover;
+        background-position-y:-23px ;
+    width: 100vw;
 
 }
