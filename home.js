@@ -67,6 +67,7 @@ async function weather() {
   console.log(res.coord);
   city.innerText = res.name;
   humidity.innerText = res.main.humidity;
+  tem.innerText = res.main.temp;
   width.innerText = res.coord.lat;
   height.innerText = res.coord.lon;
 }
