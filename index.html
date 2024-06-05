@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="" />
+    </nav>
+    <section>
+      <h2>Sign Up</h2>
+      <input
+        id="firstName"
+        type="text"
+        required
+        placeholder="First Name"
+        onchange="validName(this.value)"
+      />
+      <span class="valid" id="errorName"></span>
+      <input
+        id="user"
+        onchange="validUser(this.value)"
+        type="text"
+        required
+        placeholder="User Name"
+      />
+      <span class="valid" id="errorUser"></span>
+
+      <input
+        id="email"
+        onchange="validEmail(this.value)"
+        type="email"
+        required
+        placeholder="Email"
+      />
+      <span class="valid" id="errorEmail"></span>
+
+      <input
+        id="password"
+        onchange="validPassword(this.value)"
+        type="password"
+        required
+        placeholder="password"
+      />
+      <span class="valid" id="errorPassword"></span>
+
+      <button onclick="sign()">Sign Up</button>
+
+      <span class="valid" id="errorempty"></span>
+
+      <span>aleardy an account ? <a href="login.html"> Login</a></span>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

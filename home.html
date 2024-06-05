@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>home</title>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="" />
+
+      <h3><span id="welcome"></span> أهلأ</h3>
+    </nav>
+    <section class="header">
+      <button onclick="pray()">
+        <a href="#praySection" style="color: aliceblue; text-decoration: none">
+          مواعيد الاذان</a
+        >
+      </button>
+      <button onclick="weather()">
+        <a href="#wethar" style="color: aliceblue; text-decoration: none">
+          الطقس</a
+        >
+      </button>
+    </section>
+
+    <section id="praySection" class="pray" dir="rtl">
+      <div id="prays"></div>
+      <h2>الاذان</h2>
+      <div class="prayTime">
+        <div>
+          <button id="dateHaj">التاريخ بالميلادي</button>
+
+          <br />
+          <span>
+            التاريخ :
+            <span id="dateH"></span>
+          </span>
+        </div>
+        <!-- <p>
+          التاريخ بالميلادي :
+          <span id="dateM"></span>
+        </p> -->
+        <div>
+          <p>
+            اليوم :
+            <span id="today"></span>
+          </p>
+
+          <details>
+            <summary>مواعيد الصلاة</summary>
+
+            <span id="timePray"> </span>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="wethar">
+      <h3>الطقس</h3>
+      <!-- <input  type="search" onchange="weather(this.value)" /> -->
+      <br />
+      <span id="city"></span>: المدينه
+      <br />
+      <span id="tem"> </span>: درجة الحرارة
+      <br />
+      <span id="humidity"></span>: درجة الرطوبة
+      <br />
+      <span id="height"></span>: خطوط الطول
+      <br />
+      <span id="width"></span>: خطوط العرض
+    </section>
+  </body>
+  <script src="home.js"></script>
+</html>
