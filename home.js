@@ -64,6 +64,7 @@ async function weather() {
   // let width = document.querySelector("#width");
   let data = await fetch(urlWeather);
   let res = await data.json();
+
   console.log(res.coord);
   city.innerText = res.name;
   humidity.innerText = res.main.humidity;
